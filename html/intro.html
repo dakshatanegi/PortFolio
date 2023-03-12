@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dakshata Negi -Software Developer,Programmer</title>
+<link rel="stylesheet" href="css/style1.css"> 
+</head>
+<body>
+<div class="container">
+<div class="sidebar">
+<nav>
+<ul>
+<li><a href="/PortFolio.html">Home</a></li>
+<li><a href="/intro.html">My Intro</a></li>
+<li><a href="/service.html">Services</a></li>
+<li><a href="/blog.html">Blog</a></li>
+<li><a href="/contact.html">Contact Me</a></li>
+</ul> </nav> </div>
+
+<div class="main">
+<div class="intro">
+<h2>About Me</h2>
+<br>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus aperiam quam voluptatum eius nesciunt, eligendi vero corrupti modi illo consectetur magnam voluptatem error fugiat! Alias nihil dolor deleniti maxime aperiam!</p>
+
+<div class="skill">
+<h2>My Skills</h2>
+
+<div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+</div>
+
+<!-- <div class="skillcontainer active-tab" id="skills">
+<div class="skillitem">HTML:  <div class="skill t5"></div></div>
+<div class="skillitem">CSS:  <div class="skill"></div></div>
+<div class="skillitem">JavaScript:  <div class="skill"></div></div>
+<div class="skillitem">Python:  <div class="skill t5"></div></div>
+<div class="skillitem">PHP:  <div class="skill"></div></div>
+</div> -->
+
+<div class="tab-contents active-tab" id="skills">
+    <ul>
+    <li><span>HTML</span><br></li>   
+    <li><span>CSS</span><br></li>   
+    <li><span>JS</span><br></li>   
+    </ul>    
+    </div>
+
+<div class="tab-contents" id="education">
+<ul>
+<li><span>dav public school</span><br>Secondary school</li>   
+<li><span>dav public school</span><br>Senior Secondary school</li>   
+<li><span>Ajeenkya DY Patil School of engineering</span><br>CSE</li>   
+  
+</ul>    
+</div>
+
+<div class="tab-contents" id="experience">
+    <ul>  
+    <li><span>CodeClause</span><br>Java</li>       
+    </ul>    
+    </div>
+</div>
+
+
+
+<div class="hobbies">
+<h2>Interest/Hobbies</h2>
+<br>
+<ul>
+    <li><span>Eating</span></li>   
+    <li><span>Sleeping</span></li>     
+    <li><span>Sleeping</span></li>   
+    </ul> 
+</div>   
+</div>
+</div>
+<script>
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+</body>
+</html>
